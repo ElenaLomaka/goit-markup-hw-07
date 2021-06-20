@@ -11,7 +11,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    
 </head>
 <body>
     <!--Шапка сайта--> 
@@ -416,6 +418,11 @@
    <div data-modal class="backdrop is-hidden">
        <div class="modal">
         <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+        <button type="button" data-modal-close class="modal__close-btn">
+            <svg class="modal__close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
         <form class="js-speaker-form modal-form">               
                  <p class="modal-form__input-wrapper">
                     <label class="modal-form__field" for="user-name">Имя</label>
@@ -449,12 +456,7 @@
                 Соглашаюсь с рассылкой и принимаю &#160;<a href="" class="modal-form__checkbox-link">Условия договора</a>
                 </label>
                 <button type="submit" class="button button__form">Отправить</button>
-                <button type="button" data-modal-close class="modal__close-btn">
-                    <svg class="modal__close-icon">
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-        </form>
+            </form>
        </div>
    </div> 
 <script src="./js/modal.js"></script>
