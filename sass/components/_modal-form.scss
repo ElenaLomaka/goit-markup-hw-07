@@ -116,7 +116,7 @@ textarea {
   height: 15px;
   cursor: pointer;
   outline: none;
-  background-image: url(../images/icon-checkbox.svg);
+  border: 1px solid var(--title-text-color);
   transition: background-color var(--duration) var(--timing-function),
     box-shadow var(--duration) var(--timing-function);
 
@@ -124,11 +124,8 @@ textarea {
     background-image: url(../images/icon-check.svg);
     background-color: var(--accent-color);
   }
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    outline: var(--accent-color);
+  .modal-form__checkbox-agreement_agreement:focus + & {
+    border-color: var(--accent-color);
   }
 }
 
