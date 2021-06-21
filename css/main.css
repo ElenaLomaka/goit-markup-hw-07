@@ -305,7 +305,7 @@ textarea {
   height: 15px;
   cursor: pointer;
   outline: none;
-  background-image: url(../images/icon-checkbox.svg);
+  border: 1px solid var(--title-text-color);
   transition: background-color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
 }
 
@@ -314,9 +314,8 @@ textarea {
   background-color: var(--accent-color);
 }
 
-.modal-form__checkbox-agreement_icon:hover, .modal-form__checkbox-agreement_icon:focus {
-  background-color: var(--accent-color);
-  outline: var(--accent-color);
+.modal-form__checkbox-agreement_agreement:focus + .modal-form__checkbox-agreement_icon {
+  border-color: var(--accent-color);
 }
 
 .modal-form__checkbox-agreement_agreement:checked:hover
