@@ -174,15 +174,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
+  fill: var(--accent-color);
+}
+
 .modal__close-icon {
   width: 18px;
   height: 18px;
   fill: #000000;
   transition: fill var(--duration) var(--timing-function);
-}
-
-.modal__close-icon:hover, .modal__close-icon:focus {
-  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -225,8 +226,6 @@ img {
 
 .modal-form__input:hover + .modal-form__input_svg,
 .modal-form__input:focus + .modal-form__input_svg {
-  border-color: var(--accent-color);
-  outline: var(--accent-color);
   fill: var(--accent-color);
 }
 
